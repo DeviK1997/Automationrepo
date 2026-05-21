@@ -25,14 +25,15 @@ public void verifyCheckbox() {
 }
 public void verifyRadioButton() {
 	driver.navigate().to("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
-	WebElement radio = driver.findElement(By.xpath(""));
+	WebElement radio = driver.findElement(By.xpath("//input[@value='yellow']"));
 	radio.click();
 }
 	public static void main(String[] args) {
 		HandlingDropdown dropdown = new HandlingDropdown();
 		dropdown.browserLaunch();
 		//dropdown.verifyDropdown();
-		dropdown.verifyCheckbox();
+		//dropdown.verifyCheckbox();
+		dropdown.verifyRadioButton();
 		
 		// TODO Auto-generated method stub
 
